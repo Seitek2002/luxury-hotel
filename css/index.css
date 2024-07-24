@@ -18,6 +18,10 @@ button {
   box-sizing: border-box;
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+}
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -44,7 +48,7 @@ button {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: 400;
-  color: #000;
+  color: #fff;
 }
 .header nav a:hover {
   font-weight: 700;
@@ -64,4 +68,71 @@ button {
   .header__menu {
     display: inline;
   }
+}
+
+.hero {
+  background: url(../../assets/images/hero-img.png) center;
+  background-size: 100%;
+}
+.hero__content {
+  padding-top: 12%;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__titles h3, .hero__titles h1, .hero__titles h2 {
+  margin: 0;
+}
+.hero__titles h3 {
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero__titles h1 {
+  font-family: "Times New Roman";
+  font-size: 154px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 70%;
+}
+.hero__titles h2 {
+  font-family: "Times New Roman";
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 15px;
+}
+.hero__description {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero button {
+  background: #E0B973;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 18px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.hero__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.hero__scroll img {
+  max-width: 60px;
 }/*# sourceMappingURL=index.css.map */

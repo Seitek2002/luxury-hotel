@@ -1,0 +1,59 @@
+.hero {
+    background: url(../../assets/images/hero-img.png) center;
+    background-size: 100%;
+
+    &__content {
+        padding-top: 12%;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__titles {
+        h3,h1,h2 {
+            margin: 0;
+        }
+
+        h3 {
+            @include fontStyles(50px, 400, $text-white);
+        }
+
+        h1 {
+            @include fontStyles(154px, 700, $text-white, 'Times New Roman');
+            line-height: 70%;
+        }
+
+        h2 {
+            @include fontStyles(60px, 700, $text-white, 'Times New Roman');
+            letter-spacing: 15px;
+        }
+    }
+
+    &__description {
+        @include fontStyles(25px, 400, $text-white);
+    }
+
+    button {
+        background: #E0B973;
+        padding: 24px 32px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        gap: 18px;
+        margin: 0 auto;
+        @include fontStyles(25px, 700, #fff);
+    }
+
+    &__scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include fontStyles(25px, 700, #fff);
+
+        img {
+            max-width: 60px;
+        }
+    }
+}
