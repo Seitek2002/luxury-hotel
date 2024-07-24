@@ -23,9 +23,22 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.header__logo img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 150px;
+  }
+}
 .header nav {
   display: flex;
   gap: 88px;
+}
+@media screen and (max-width: 425px) {
+  .header nav {
+    display: none;
+  }
 }
 .header nav a {
   font-family: "Montserrat";
@@ -36,4 +49,19 @@ button {
 .header nav a:hover {
   font-weight: 700;
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .header nav a {
+    font-size: 16px;
+  }
+}
+.header__menu {
+  width: 50px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .header__menu {
+    display: inline;
+  }
 }/*# sourceMappingURL=index.css.map */
