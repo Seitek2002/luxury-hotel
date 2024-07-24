@@ -1,0 +1,12 @@
+@mixin rowStyles($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin fontStyles($size, $weight, $color, $font: 'Montserrat') {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
