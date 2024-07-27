@@ -1,1 +1,237 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';/*# sourceMappingURL=index.css.map */
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1580px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 150px;
+  }
+}
+.header nav {
+  display: flex;
+  gap: 88px;
+}
+@media screen and (max-width: 425px) {
+  .header nav {
+    display: none;
+  }
+}
+.header nav a {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.header nav a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .header nav a {
+    font-size: 16px;
+  }
+}
+.header__menu {
+  width: 50px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .header__menu {
+    display: inline;
+  }
+}
+
+.swipper {
+  margin: 0 auto;
+  max-width: 798px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  color: #14274a;
+  font-size: 72px;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.swiper-slide h3 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  color: #14274a;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.swiper-slide p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  color: #14274a;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.swiper-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+
+.button-prev-swp,
+.button-next-swp {
+  cursor: pointer;
+}
+
+.hero {
+  background: url(../assets/images/hero-img.png) center;
+  background-size: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-size: cover;
+  }
+}
+.hero__content {
+  padding-top: 12%;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .hero__content {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero__content {
+    padding-top: 40%;
+  }
+}
+.hero__titles h3, .hero__titles h1, .hero__titles h2 {
+  margin: 0;
+}
+.hero__titles h3 {
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero__titles h1 {
+  font-family: "Times New Roman";
+  font-size: 154px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 70%;
+}
+.hero__titles h2 {
+  font-family: "Times New Roman";
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__titles h3 {
+    font-size: 40px;
+  }
+  .hero__titles h1 {
+    font-size: 130px;
+  }
+  .hero__titles h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero__titles h3 {
+    font-size: 20px;
+  }
+  .hero__titles h1 {
+    font-size: 80px;
+  }
+  .hero__titles h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero__titles h1 {
+    font-size: 60px;
+  }
+}
+.hero__description {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .hero__description {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero__description {
+    font-size: 14px;
+  }
+}
+.hero button {
+  background: #E0B973;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 18px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.hero__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.hero__scroll img {
+  max-width: 60px;
+}/*# sourceMappingURL=index.css.map */

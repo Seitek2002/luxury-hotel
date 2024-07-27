@@ -1,0 +1,50 @@
+.header {
+    position: absolute;
+    width: 100%;
+
+    &__content {
+        @include rowStyles(space-between, center);
+    }
+
+    &__logo {
+        img {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 150px;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 88px;
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        a {
+            @include fontStyles(25px, 400, $text-white);
+
+            &:hover {
+                font-weight: 700;
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__menu {
+        width: 50px;
+        cursor: pointer;
+        display: none;
+
+        @media screen and (max-width: 425px) {
+            display: inline;
+        }
+    }
+}
