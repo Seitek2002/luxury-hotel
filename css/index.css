@@ -76,7 +76,7 @@ button {
   max-width: 798px;
 }
 
-h1 {
+h2 {
   display: flex;
   justify-content: center;
   font-family: "Times New Roman";
@@ -87,12 +87,12 @@ h1 {
   margin-bottom: 26px;
 }
 @media screen and (max-width: 375px) {
-  h1 {
+  h2 {
     font-size: 66px;
   }
 }
 @media screen and (max-width: 375px) and (max-width: 320px) {
-  h1 {
+  h2 {
     font-size: 56px;
   }
 }
