@@ -71,6 +71,61 @@ button {
   }
 }
 
+.swipper {
+  margin: 0 auto;
+  max-width: 798px;
+}
+.swipper h2 {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 72px;
+  font-weight: 700;
+  color: purple;
+  margin: 0;
+  margin-bottom: 26px;
+}
+@media screen and (max-width: 375px) {
+  .swipper h2 {
+    font-size: 66px;
+  }
+}
+@media screen and (max-width: 375px) and (max-width: 320px) {
+  .swipper h2 {
+    font-size: 56px;
+  }
+}
+
+.swiper-slide h3 {
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 400;
+  color: purple;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.swiper-slide p {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 400;
+  color: purple;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.swiper-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+
+.button-prev-swp,
+.button-next-swp {
+  cursor: pointer;
+}
+
 .hero {
   background: url(../assets/images/hero-img.png) center;
   background-size: 100%;
@@ -362,6 +417,16 @@ button {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+=======
+  margin-top: 20px;
+  height: 40px;
+  width: 110px;
+  margin-right: 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-family: "Arial";
+
 }
 
 .word p {
