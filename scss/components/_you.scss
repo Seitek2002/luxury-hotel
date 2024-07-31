@@ -1,115 +1,102 @@
-.container{
-    margin: 0 auto;
-    
-    }
+.container {
+  margin: 0 auto;
+}
 
-.about h3{
-    
-font-family: "Times New Roman";
-font-weight: 500;
-font-size: 60px;
-line-height: 72px;
-
+.about h3 {
+  font-family: "Times New Roman";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
 }
 
 .about p {
-
-font-family: "Montserrat";
-font-weight: 400;
-font-size: 30px;
-line-height: 37px;
-
-
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
 }
 
-.about{
-display: inline;
-justify-content: center;
-margin-top: 130px;
+.about {
+  display: inline;
+  justify-content: center;
+  margin-top: 130px;
 
-width: 1200px;
-margin-left: 100px;
+  width: 1200px;
+  margin-left: 100px;
 }
 
-.local{
-margin-left: 112px;    
-display: flex;
-justify-content: space-around;
-width: 1200px;
-
+.local {
+  margin-left: 112px;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
 }
 
-.we{
-display: flex;
-justify-content: center;
+.we {
+  display: flex;
+  justify-content: center;
 }
 
-.adress{
-    // margin-left: -20px;
+.map {
+  display: flex;
+  align-items: center;
 
+  img {
+    width: 100px;
+    height: 29px;
+  }
 }
-
 
 .adress p {
-
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 48.76px;
-    text-align: left;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 8.76px;
+  text-align: left;
 }
 
-.adress h4{
-    font-family: Montserrat;
-font-size: 20px;
-font-weight: 700;
-line-height: 48.76px;
-text-align: left;
-
+.adress h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
-.info input{
-    
-    width: 470px;
-    height: 50px;
-
+.info input {
+  width: 470px;
+  height: 50px;
 }
 
-.info{
-margin-left: 180px;
-// display: flex;
-// flex-direction: column;
-// align-items: flex-end;
+.info {
+  margin-left: 180px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
 }
 
-
-.info p{
-font-family: "Arial";
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+.info p {
+  font-family: "Arial";
 }
 
-.mess p{
-font-family: "Arial";
+.mess p {
+  font-family: "Arial";
 }
 
-
-.mess input{
-height: 180px;
+.mess input {
+  height: 180px;
 }
 
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-.info button{
-    display: flex;
-flex-direction: column;
-align-items: flex-end;
-margin-top: 20px;
-height: 40px;
-width: 110px;
-margin-right: 20px;
-background-color: orange;
-color: white;
-border: none;
-font-family: "Arial";
+  button {
+    margin-top: 15px;
+    background: $bg-beige;
+    border: none;
+    padding: 18px 25px;
+    border-radius: 10px;
+    @include fontStyles(20px, 400, $text-white);
+  }
 }
