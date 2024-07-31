@@ -1,0 +1,47 @@
+.swipper {
+	margin: 0 auto;
+	max-width: 798px;
+}
+h1 {
+	display: flex;
+	justify-content: center;
+	font-family: 'Times New Roman';
+	font-weight: 700;
+	color: #14274a;
+	font-size: 72px;
+	margin: 0;
+	margin-bottom: 26px;
+	@media screen and (max-width: 375px) {
+		font-size: 66px;
+		@media screen and (max-width: 320px) {
+			font-size: 56px;
+		}
+	}
+}
+.swiper-slide h3 {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	text-align: center;
+	color: #14274a;
+	font-size: 36px;
+	margin: 0;
+	margin-bottom: 19px;
+}
+.swiper-slide p {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	text-align: center;
+	color: #14274a;
+	font-size: 25px;
+	margin: 0;
+	margin-bottom: 23px;
+}
+.swiper-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 21px;
+}
+.button-prev-swp,
+.button-next-swp {
+	cursor: pointer;
+}
