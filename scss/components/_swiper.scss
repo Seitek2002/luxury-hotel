@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	max-width: 798px;
 	h2 {
-		text-align: center;
+    text-align: center;
 		@include fontStyles(72px, 700, purple, 'Times New Roman');
 		margin: 0;
 		margin-bottom: 26px;
@@ -16,13 +16,13 @@
 }
 
 .swiper-slide h3 {
-	@include fontStyles(36px, 400, purple);
+  @include fontStyles(36px, 400, purple);
 	text-align: center;
 	margin: 0;
 	margin-bottom: 19px;
 }
 .swiper-slide p {
-	@include fontStyles(25px, 400, purple);
+  @include fontStyles(25px, 400, purple);
 	text-align: center;
 	margin: 0;
 	margin-bottom: 23px;
