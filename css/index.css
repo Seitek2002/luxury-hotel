@@ -75,8 +75,7 @@ button {
   margin: 0 auto;
   max-width: 798px;
 }
-
-h2 {
+.swipper h2 {
   display: flex;
   justify-content: center;
   font-family: "Times New Roman";
@@ -87,12 +86,12 @@ h2 {
   margin-bottom: 26px;
 }
 @media screen and (max-width: 375px) {
-  h2 {
+  .swipper h2 {
     font-size: 66px;
   }
 }
 @media screen and (max-width: 375px) and (max-width: 320px) {
-  h2 {
+  .swipper h2 {
     font-size: 56px;
   }
 }
@@ -247,7 +246,59 @@ h2 {
   max-width: 60px;
 }
 
-<<<<<<< HEAD
+.facilities-hero {
+  background: url(../assets/images/facilities-banner.png) center;
+  background-size: 100%;
+}
+
+.rooms__description {
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 400;
+  color: #14274A;
+  text-align: center;
+}
+.rooms__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.rooms__info {
+  width: 40%;
+  border-left: 2px solid #14274A;
+  padding-left: 48px;
+}
+.rooms__info h2 {
+  font-family: "Times New Roman";
+  font-size: 60px;
+  font-weight: 700;
+  color: #14274A;
+  margin-top: 0;
+}
+.rooms__info p {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 400;
+  color: #14274A;
+}
+.rooms__info button {
+  background: #E0B973;
+  border: none;
+  padding: 18px 65px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.rooms__img {
+  width: 50%;
+}
+.rooms__img img {
+  max-width: 100%;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -361,120 +412,6 @@ h2 {
   font-family: "Arial";
 }
 
-.container {
-  margin: 0 auto;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 270px;
-  height: 100%;
-}
-
-.nav p, span {
-  color: white;
-  font-family: "Montserrat";
-}
-
-.footerSection {
-  background-color: #14274A;
-  height: 260px;
-}
-
-.pages a {
-  display: flex;
-  align-items: center;
-}
-
-a:hover {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.pages img {
-  margin-right: 15px;
-  width: 18 px;
-  height: 18px;
-}
-
-.email input {
-  color: orange;
-  background-color: #14274A;
-  height: 40px;
-  width: 190px;
-  color: white;
-}
-
-.block {
-  display: grid;
-  gap: 18px;
-}
-@media screen and (max-width: 425px) {
-  .block {
-    display: none;
-  }
-}
-.block a {
-=======
-.facilities-hero {
-  background: url(../assets/images/facilities-banner.png) center;
-  background-size: 100%;
-}
-.rooms__description {
-  font-family: "Montserrat";
-  font-size: 36px;
-  font-weight: 400;
-  color: #14274A;
-  text-align: center;
-}
-.rooms__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
-}
-.rooms__info {
-  width: 40%;
-  border-left: 2px solid #14274A;
-  padding-left: 48px;
-}
-.rooms__info h2 {
-  font-family: "Times New Roman";
-  font-size: 60px;
-  font-weight: 700;
-  color: #14274A;
-  margin-top: 0;
-}
-.rooms__info p {
-  font-family: "Montserrat";
-  font-size: 25px;
-  font-weight: 400;
-  color: #14274A;
-}
-.rooms__info button {
-  background: #E0B973;
-  border: none;
-  padding: 18px 65px;
-  border-radius: 10px;
->>>>>>> 9a49114e37256375990fcf295893f8bdcbe8d027
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
-<<<<<<< HEAD
-.block a:hover {
-  font-weight: 700;
-  text-decoration: underline;
-}
-@media screen and (max-width: 768px) {
-  .block a {
-    font-size: 16px;
-  }
-}
-
 .word p {
   display: flex;
   justify-content: center;
@@ -482,11 +419,4 @@ a:hover {
   margin-top: -200px;
   font-size: 70px;
   font-family: "Montserrat";
-=======
-.rooms__img {
-  width: 50%;
-}
-.rooms__img img {
-  max-width: 100%;
->>>>>>> 9a49114e37256375990fcf295893f8bdcbe8d027
 }/*# sourceMappingURL=index.css.map */
