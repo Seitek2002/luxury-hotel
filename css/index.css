@@ -207,7 +207,7 @@ button {
 }
 
 .banner {
-  padding-top: 350px;
+  height: 400px;
   background-color: #14274A;
 }
 
@@ -374,4 +374,13 @@ button {
   .block a {
     font-size: 16px;
   }
+}
+
+.word p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: -200px;
+  font-size: 70px;
+  font-family: "Montserrat";
 }/*# sourceMappingURL=index.css.map */
