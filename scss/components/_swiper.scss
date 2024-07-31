@@ -1,23 +1,24 @@
 .swipper {
 	margin: 0 auto;
 	max-width: 798px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    color: #14274a;
+    font-size: 72px;
+    margin: 0;
+    margin-bottom: 26px;
+    @media screen and (max-width: 375px) {
+      font-size: 66px;
+      @media screen and (max-width: 320px) {
+        font-size: 56px;
+      }
+    }
+  }
 }
-h2 {
-	display: flex;
-	justify-content: center;
-	font-family: 'Times New Roman';
-	font-weight: 700;
-	color: #14274a;
-	font-size: 72px;
-	margin: 0;
-	margin-bottom: 26px;
-	@media screen and (max-width: 375px) {
-		font-size: 66px;
-		@media screen and (max-width: 320px) {
-			font-size: 56px;
-		}
-	}
-}
+
 .swiper-slide h3 {
 	font-family: 'Montserrat';
 	font-weight: 400;
