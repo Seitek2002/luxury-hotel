@@ -11,6 +11,12 @@ h1 {
 	font-size: 72px;
 	margin: 0;
 	margin-bottom: 26px;
+	@media screen and (max-width: 375px) {
+		font-size: 66px;
+		@media screen and (max-width: 320px) {
+			font-size: 56px;
+		}
+	}
 }
 .swiper-slide h3 {
 	font-family: 'Montserrat';
