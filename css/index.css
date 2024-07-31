@@ -12,7 +12,7 @@ button {
 }
 
 .container {
-  max-width: 1580px;
+  max-width: 1605px;
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -304,8 +304,6 @@ button {
   text-align: center;
 }
 .room-desc__content h2 {
-  font-weight: 700;
-  font-size: 60px;
   line-height: 72px;
   letter-spacing: 0.05em;
   margin-top: 81px;
@@ -319,6 +317,19 @@ button {
 .room-desc__content p {
   color: #14274a;
   font-size: 25px;
-  font-weight: "Montserrat";
   margin: 29px 0;
+}
+
+.single-room__content h2 {
+  text-align: center;
+  background-color: #14274a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73.14px;
+  margin: 0;
+  width: 1605px;
+}
+.single-room__content .dropdown-menu .menu-btn {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,19 @@
+.single-room {
+  &__content {
+    h2 {
+      text-align: center;
+      background-color: #14274a;
+      color: #fff;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 73.14px;
+      margin: 0;
+      width: 1605px;
+    }
+    .dropdown-menu{
+        .menu-btn{
+            display: flex;
+        }
+    }
+  }
+}
