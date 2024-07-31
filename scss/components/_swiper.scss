@@ -1,39 +1,29 @@
 .swipper {
 	margin: 0 auto;
 	max-width: 798px;
-  h2 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    color: #14274a;
-    font-size: 72px;
-    margin: 0;
-    margin-bottom: 26px;
-    @media screen and (max-width: 375px) {
-      font-size: 66px;
-      @media screen and (max-width: 320px) {
-        font-size: 56px;
-      }
-    }
-  }
+	h2 {
+		text-align: center;
+		@include fontStyles(72px, 700, purple, 'Times New Roman');
+		margin: 0;
+		margin-bottom: 26px;
+		@media screen and (max-width: 375px) {
+			font-size: 66px;
+			@media screen and (max-width: 320px) {
+				font-size: 56px;
+			}
+		}
+	}
 }
 
 .swiper-slide h3 {
-	font-family: 'Montserrat';
-	font-weight: 400;
+	@include fontStyles(36px, 400, purple);
 	text-align: center;
-	color: #14274a;
-	font-size: 36px;
 	margin: 0;
 	margin-bottom: 19px;
 }
 .swiper-slide p {
-	font-family: 'Montserrat';
-	font-weight: 400;
+	@include fontStyles(25px, 400, purple);
 	text-align: center;
-	color: #14274a;
-	font-size: 25px;
 	margin: 0;
 	margin-bottom: 23px;
 }

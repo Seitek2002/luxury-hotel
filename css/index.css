@@ -76,12 +76,11 @@ button {
   max-width: 798px;
 }
 .swipper h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: "Times New Roman";
-  font-weight: 700;
-  color: #14274a;
   font-size: 72px;
+  font-weight: 700;
+  color: purple;
   margin: 0;
   margin-bottom: 26px;
 }
@@ -98,20 +97,20 @@ button {
 
 .swiper-slide h3 {
   font-family: "Montserrat";
-  font-weight: 400;
-  text-align: center;
-  color: #14274a;
   font-size: 36px;
+  font-weight: 400;
+  color: purple;
+  text-align: center;
   margin: 0;
   margin-bottom: 19px;
 }
 
 .swiper-slide p {
   font-family: "Montserrat";
-  font-weight: 400;
-  text-align: center;
-  color: #14274a;
   font-size: 25px;
+  font-weight: 400;
+  color: purple;
+  text-align: center;
   margin: 0;
   margin-bottom: 23px;
 }
