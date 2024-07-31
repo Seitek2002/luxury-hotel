@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   margin: 0;
 }
@@ -189,6 +190,179 @@ button {
   max-width: 60px;
 }
 
+<<<<<<< HEAD
+.container {
+  margin: 0 auto;
+}
+
+.us p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97.52px;
+}
+
+.banner {
+  height: 400px;
+  background-color: #14274A;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.about h3 {
+  font-family: "Times New Roman";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.about p {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.about {
+  display: inline;
+  justify-content: center;
+  margin-top: 130px;
+  width: 1200px;
+  margin-left: 100px;
+}
+
+.local {
+  margin-left: 112px;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+}
+
+.we {
+  display: flex;
+  justify-content: center;
+}
+
+.adress p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 48.76px;
+  text-align: left;
+}
+
+.adress h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 48.76px;
+  text-align: left;
+}
+
+.info input {
+  width: 470px;
+  height: 50px;
+}
+
+.info {
+  margin-left: 180px;
+}
+
+.info p {
+  font-family: "Arial";
+}
+
+.mess p {
+  font-family: "Arial";
+}
+
+.mess input {
+  height: 180px;
+}
+
+.info button {
+  margin-top: 20px;
+  height: 40px;
+  width: 110px;
+  margin-right: 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-family: "Arial";
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 270px;
+  height: 100%;
+}
+
+.nav p, span {
+  color: white;
+  font-family: "Montserrat";
+}
+
+.footerSection {
+  background-color: #14274A;
+  height: 260px;
+}
+
+.pages a {
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.pages img {
+  margin-right: 15px;
+  width: 18 px;
+  height: 18px;
+}
+
+.email input {
+  color: orange;
+  background-color: #14274A;
+  height: 40px;
+  width: 190px;
+  color: white;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  height: 47px;
+  width: 60px;
+  border: none;
+}
+
+.block {
+  display: grid;
+  gap: 18px;
+}
+@media screen and (max-width: 425px) {
+  .block {
+    display: none;
+  }
+}
+.block a {
+=======
 .facilities-hero {
   background: url(../assets/images/facilities-banner.png) center;
   background-size: 100%;
@@ -229,14 +403,35 @@ button {
   border: none;
   padding: 18px 65px;
   border-radius: 10px;
+>>>>>>> 9a49114e37256375990fcf295893f8bdcbe8d027
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 400;
   color: #fff;
 }
+<<<<<<< HEAD
+.block a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .block a {
+    font-size: 16px;
+  }
+}
+
+.word p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: -200px;
+  font-size: 70px;
+  font-family: "Montserrat";
+=======
 .rooms__img {
   width: 50%;
 }
 .rooms__img img {
   max-width: 100%;
+>>>>>>> 9a49114e37256375990fcf295893f8bdcbe8d027
 }/*# sourceMappingURL=index.css.map */
