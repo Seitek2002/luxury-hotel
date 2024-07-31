@@ -80,7 +80,7 @@ button {
   font-family: "Times New Roman";
   font-size: 72px;
   font-weight: 700;
-  color: purple;
+  color: #14274a;
   margin: 0;
   margin-bottom: 26px;
 }
@@ -94,28 +94,25 @@ button {
     font-size: 56px;
   }
 }
-
-.swiper-slide h3 {
+.swipper .swiper-slide h3 {
   font-family: "Montserrat";
   font-size: 36px;
   font-weight: 400;
-  color: purple;
+  color: #14274a;
   text-align: center;
   margin: 0;
   margin-bottom: 19px;
 }
-
-.swiper-slide p {
+.swipper .swiper-slide p {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: 400;
-  color: purple;
+  color: #14274a;
   text-align: center;
   margin: 0;
   margin-bottom: 23px;
 }
-
-.swiper-buttons {
+.swipper .swiper-buttons {
   display: flex;
   justify-content: center;
   gap: 21px;
