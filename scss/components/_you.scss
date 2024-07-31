@@ -15,9 +15,10 @@ line-height: 72px;
 .about p {
 
 font-family: "Montserrat";
-font-weight: 200;
+font-weight: 400;
 font-size: 30px;
 line-height: 37px;
+
 
 }
 
@@ -76,11 +77,17 @@ text-align: left;
 
 .info{
 margin-left: 180px;
+// display: flex;
+// flex-direction: column;
+// align-items: flex-end;
 }
 
 
 .info p{
 font-family: "Arial";
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 
 .mess p{
@@ -94,7 +101,9 @@ height: 180px;
 
 
 .info button{
-
+    display: flex;
+flex-direction: column;
+align-items: flex-end;
 margin-top: 20px;
 height: 40px;
 width: 110px;
