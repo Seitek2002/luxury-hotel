@@ -72,7 +72,7 @@ button {
 }
 
 .hero {
-  background: url(../../assets/images/hero-img.png) center;
+  background: url(../assets/images/hero-img.png) center;
   background-size: 100%;
 }
 @media screen and (max-width: 1024px) {
@@ -190,6 +190,7 @@ button {
   max-width: 60px;
 }
 
+<<<<<<< HEAD
 .container {
   margin: 0 auto;
 }
@@ -361,11 +362,54 @@ button {
   }
 }
 .block a {
+=======
+.facilities-hero {
+  background: url(../assets/images/facilities-banner.png) center;
+  background-size: 100%;
+}
+.rooms__description {
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 400;
+  color: #14274A;
+  text-align: center;
+}
+.rooms__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.rooms__info {
+  width: 40%;
+  border-left: 2px solid #14274A;
+  padding-left: 48px;
+}
+.rooms__info h2 {
+  font-family: "Times New Roman";
+  font-size: 60px;
+  font-weight: 700;
+  color: #14274A;
+  margin-top: 0;
+}
+.rooms__info p {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 400;
+  color: #14274A;
+}
+.rooms__info button {
+  background: #E0B973;
+  border: none;
+  padding: 18px 65px;
+  border-radius: 10px;
+>>>>>>> 9a49114e37256375990fcf295893f8bdcbe8d027
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 400;
   color: #fff;
 }
+<<<<<<< HEAD
 .block a:hover {
   font-weight: 700;
   text-decoration: underline;
@@ -383,4 +427,11 @@ button {
   margin-top: -200px;
   font-size: 70px;
   font-family: "Montserrat";
+=======
+.rooms__img {
+  width: 50%;
+}
+.rooms__img img {
+  max-width: 100%;
+>>>>>>> 9a49114e37256375990fcf295893f8bdcbe8d027
 }/*# sourceMappingURL=index.css.map */
