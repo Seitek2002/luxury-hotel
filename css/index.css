@@ -398,5 +398,8 @@ button {
   width: 420px;
 }
 .single-room__content .dropdown-menu .menu-open {
-  display: block;
+  display: flex;
+}
+.single-room__content .dropdown-menu .main-menu-clicked {
+  box-shadow: 0 0 0.8em #14274a;
 }/*# sourceMappingURL=index.css.map */

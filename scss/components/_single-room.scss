@@ -78,7 +78,10 @@
       }
 
       .menu-open{
-        display: block;
+        display: flex;
+      }
+      .main-menu-clicked{
+        box-shadow: 0 0 0.8em #14274a;
       }
     }
   }
