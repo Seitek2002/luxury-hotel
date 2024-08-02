@@ -1,11 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo" href="#">
+            <img src="./assets/icons/header-logo.svg" alt="" />
+          </a>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Facilities</a>
+            <a href="#">Rooms</a>
+            <a href="#">Contact-us</a>
+          </nav>
+          <img
+            class="header__menu"
+            src="./assets/icons/header-menu.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="hero room-page">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__info">
+            <div class="hero__titles">
+              <h3>WELCOME TO</h3>
+              <h1>LUXURY</h1>
+              <h2>HOTELS</h2>
+            </div>
+            <div class="hero__description">
+              Book your stay and enjoy Luxury <br />
+              redefined at the most affordable rates.
+            </div>
+          </div>
+          <button>
+            <img src="./assets/icons/hero-book.svg" alt="book-icon" />
+            BOOK NOW
+          </button>
+          <div class="hero__scroll">
+            <span>Scroll</span>
+            <img src="./assets/icons/hero-arrow.svg" alt="arrow-icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="room-desc">
+      <div class="container">
+        <div class="room-desc__content">
+          <h2>ROOMS AND RATES</h2>
+          <p>
+            Each of our bright, light-flooded rooms come with everything you
+            could possibly need for a comfortable stay. And yes, comfort isn’t
+            our only objective, we also value good design, sleek contemporary
+            furnishing complemented by the rich tones of nature’s palette as
+            visible from our rooms’ sea-view windows and terraces.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-room">
+      <div class="container">
+        <div class="single-room__content">
+          <img class="single__img" src="./assets/images/single-room.png" alt="single-room" />
+          <h2>SINGLE ROOM</h2>
+
+          <div class="dropdown-menu">
+            <div class="main-menu">
+              <div class="menu-btn">
+                <img src="./assets/icons/single-room-plus.svg" alt="more" />
+                <h3>VIEW ROOM DETAILS</h3>
+              </div>
+              <button class="price">$147 Avg/night</button>
+            </div>
+
+            <div class="menu">
+              <div class="active" id="info-room">
+                <div class="short-info-menu">
+                  <p>Оснащение номера</p>
+                  <ul>
+                    <li>Вмещаемость : <strong>2</strong></li>
+                    <li>Ванные : <strong>1</strong></li>
+                    <li>Спальни : <strong>1</strong></li>
+                    <li>Кровать : <strong>1</strong></li>
+                  </ul>
+                  <ul>
+                    <li>Въезд : <strong>14:00 после обеда</strong></li>
+                    <li>Выезд : <strong>12:00 после обеда</strong></li>
+                    <li>Тип номера : <strong>Комната</strong></li>
+                  </ul>
+                </div>
+                <div class="big-info-menu">
+                  <p>Включенные Удобства</p>
+                  <p>
+                    Подготовка постели ко сну<br />
+                    Круглосуточное обслуживание номеров<br />
+                    Регулярно пополняемый бесшумный мини-бар<br />
+                    Фирменный постельный комплект Ванная комната<br />
+                    Ванные принадлежности ECO <br />
+                    Зеркало для макияжа с подсветкой, фен<br />
+                    Махровые халаты<br />
+                    Высокоскоростной доступ в Интернет<br />
+                    Возможность подключения компьютера<br />
+                    Чайник и комплиментарный набор чая и кофе<br />
+                    Утюг и гладильная доска<br />
+                  </p>
+                  <p>
+                    Все номера и люксы некурящие<br />
+                    Ортопедические матрацы<br />
+                    Smart HD ТВ 40 и 50 дюймов<br />
+                    Сейф<br />
+                    Система климат-контроля<br />
+                    Меню подушек<br />
+                    Принадлежности для детей<br />
+                    Предоставление мин. воды<br />
+                    Охраняемая парковка<br />
+                    Гигиенический душ<br />
+                    Балкон<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="double-room">
+      <div class="container">
+        <div class="double-room__content">
+
+          <!-- Swiper Container -->
+          <div class="swiper mySwiper double-room-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room.png"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room2.jpg"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room3.jpg"
+                  alt="double-room"
+                />
+              </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <h2>DOUBLE ROOM</h2>
+
+          <div class="dropdown-menu">
+            <div class="main-menu">
+              <div class="menu-btn">
+                <img src="./assets/icons/single-room-plus.svg" alt="more" />
+                <h3>VIEW ROOM DETAILS</h3>
+              </div>
+              <button class="price">$155 Avg/night</button>
+            </div>
+
+            <div class="menu">
+              <div class="active" id="info-room">
+                <div class="short-info-menu">
+                  <p>Оснащение номера</p>
+                  <ul>
+                    <li>Вмещаемость : <strong>2</strong></li>
+                    <li>Ванные : <strong>1</strong></li>
+                    <li>Спальни : <strong>1</strong></li>
+                    <li>Кровать : <strong>1</strong></li>
+                  </ul>
+                  <ul>
+                    <li>Въезд : <strong>14:00 после обеда</strong></li>
+                    <li>Выезд : <strong>12:00 после обеда</strong></li>
+                    <li>Тип номера : <strong>Комната</strong></li>
+                  </ul>
+                </div>
+                <div class="big-info-menu">
+                  <p>Включенные Удобства</p>
+                  <p>
+                    Подготовка постели ко сну<br />
+                    Круглосуточное обслуживание номеров<br />
+                    Регулярно пополняемый бесшумный мини-бар<br />
+                    Фирменный постельный комплект Ванная комната<br />
+                    Ванные принадлежности ECO <br />
+                    Зеркало для макияжа с подсветкой, фен<br />
+                    Махровые халаты<br />
+                    Высокоскоростной доступ в Интернет<br />
+                    Возможность подключения компьютера<br />
+                    Чайник и комплиментарный набор чая и кофе<br />
+                    Утюг и гладильная доска<br />
+                  </p>
+                  <p>
+                    Все номера и люксы некурящие<br />
+                    Ортопедические матрацы<br />
+                    Smart HD ТВ 40 и 50 дюймов<br />
+                    Сейф<br />
+                    Система климат-контроля<br />
+                    Меню подушек<br />
+                    Принадлежности для детей<br />
+                    Предоставление мин. воды<br />
+                    Охраняемая парковка<br />
+                    Гигиенический душ<br />
+                    Балкон<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="twin-room">
+      <div class="container">
+        <div class="twin-room__content">
+          
+          <div class="swiper mySwiper double-room-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room.png"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room2.jpg"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room3.jpg"
+                  alt="double-room"
+                />
+              </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <h2>TWIN ROOM</h2>
+
+          <div class="dropdown-menu">
+            <div class="main-menu">
+              <div class="menu-btn">
+                <img src="./assets/icons/single-room-plus.svg" alt="more" />
+                <h3>VIEW ROOM DETAILS</h3>
+              </div>
+              <button class="price">$155 Avg/night</button>
+            </div>
+
+            <div class="menu">
+              <div class="active" id="info-room">
+                <div class="short-info-menu">
+                  <p>Оснащение номера</p>
+                  <ul>
+                    <li>Вмещаемость : <strong>2</strong></li>
+                    <li>Ванные : <strong>1</strong></li>
+                    <li>Спальни : <strong>1</strong></li>
+                    <li>Кровать : <strong>1</strong></li>
+                  </ul>
+                  <ul>
+                    <li>Въезд : <strong>14:00 после обеда</strong></li>
+                    <li>Выезд : <strong>12:00 после обеда</strong></li>
+                    <li>Тип номера : <strong>Комната</strong></li>
+                  </ul>
+                </div>
+                <div class="big-info-menu">
+                  <p>Включенные Удобства</p>
+                  <p>
+                    Подготовка постели ко сну<br />
+                    Круглосуточное обслуживание номеров<br />
+                    Регулярно пополняемый бесшумный мини-бар<br />
+                    Фирменный постельный комплект Ванная комната<br />
+                    Ванные принадлежности ECO <br />
+                    Зеркало для макияжа с подсветкой, фен<br />
+                    Махровые халаты<br />
+                    Высокоскоростной доступ в Интернет<br />
+                    Возможность подключения компьютера<br />
+                    Чайник и комплиментарный набор чая и кофе<br />
+                    Утюг и гладильная доска<br />
+                  </p>
+                  <p>
+                    Все номера и люксы некурящие<br />
+                    Ортопедические матрацы<br />
+                    Smart HD ТВ 40 и 50 дюймов<br />
+                    Сейф<br />
+                    Система климат-контроля<br />
+                    Меню подушек<br />
+                    Принадлежности для детей<br />
+                    Предоставление мин. воды<br />
+                    Охраняемая парковка<br />
+                    Гигиенический душ<br />
+                    Балкон<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./dropdown-rooms.js"></script>
+    <script src="./slider.js"></script>
+  </body>
 </html>

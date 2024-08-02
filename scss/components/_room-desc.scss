@@ -1,0 +1,21 @@
+.room-desc {
+  &__content {
+    text-align: center;
+
+    h2 {
+      line-height: 72px;
+      letter-spacing: 0.05em;
+      margin-top: 81px;
+      margin-bottom: 0;
+
+      @include fontStyles(60px, 700, #14274a, "Times New Roman");
+      letter-spacing: 15px;
+    }
+
+    p {
+      color: #14274a;
+      font-size: 25px;
+      margin: 29px 0;
+    }
+  }
+}
