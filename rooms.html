@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./css/index.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -139,7 +145,37 @@
     <section class="double-room">
       <div class="container">
         <div class="double-room__content">
-          <img class="double-img" src="./assets/images/double-room.png" alt="double-room" />
+
+          <!-- Swiper Container -->
+          <div class="swiper-container double-room-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room.png"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room2.jpg"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room3.jpg"
+                  alt="double-room"
+                />
+              </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="swiper-pagination"></div>
+          </div>
+
           <h2>DOUBLE ROOM</h2>
 
           <div class="dropdown-menu">
@@ -206,7 +242,11 @@
     <section class="twin-room">
       <div class="container">
         <div class="twin-room__content">
-          <img class="double-img" src="./assets/images/twin-room1.jpeg" alt="twin-room" />
+          <img
+            class="double-img"
+            src="./assets/images/twin-room1.jpeg"
+            alt="twin-room"
+          />
           <h2>TWIN ROOM</h2>
 
           <div class="dropdown-menu">
@@ -270,9 +310,7 @@
       </div>
     </section>
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./dropdown-rooms.js"></script>
-    
-
   </body>
 </html>

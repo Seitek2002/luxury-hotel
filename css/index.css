@@ -410,6 +410,7 @@ button {
 .double-room__content {
   border: 3px solid #14274a;
   width: 1599px;
+  /* Swiper styles */
 }
 .double-room__content h2 {
   text-align: center;
@@ -419,6 +420,38 @@ button {
   font-size: 60px;
   line-height: 73.14px;
   margin: 0;
+}
+.double-room__content .double-room-swiper {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.double-room__content .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.double-room__content .swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+.double-room__content .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #14274a;
+  opacity: 0.5;
+}
+.double-room__content .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.double-room__content .swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.double-room__content .swiper-pagination-bullets .swiper-pagination-bullet {
+  flex: 1;
 }
 .double-room__content .dropdown-menu .main-menu {
   display: flex;
@@ -442,7 +475,6 @@ button {
   border-radius: 10px;
   display: flex;
   gap: 18px;
-  font-family: "Montserrat";
   font-size: 25px;
   font-weight: 700;
   color: #fff;

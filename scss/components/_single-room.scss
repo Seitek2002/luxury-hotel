@@ -4,7 +4,7 @@
   &__content {
     border: 3px solid #14274a;
     width: 1602px;
-    
+
     h2 {
       text-align: center;
       background-color: #14274a;
@@ -60,16 +60,16 @@
           ul {
             font-weight: 400;
             list-style: none;
-            li{
-            text-align: left;
+            li {
+              text-align: left;
             }
           }
         }
-        .big-info-menu{
+        .big-info-menu {
           display: flex;
           border-top: 3px solid #14274a;
           margin-top: 30px;
-          p{
+          p {
             color: #14274a;
             font-size: 25px;
             width: 420px;
@@ -77,10 +77,10 @@
         }
       }
 
-      .menu-open{
+      .menu-open {
         display: flex;
       }
-      .main-menu-clicked{
+      .main-menu-clicked {
         box-shadow: 0 0 0.8em #14274a;
       }
     }

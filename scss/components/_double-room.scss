@@ -14,6 +14,47 @@
         line-height: 73.14px;
         margin: 0;
       }
+      
+      /* Swiper styles */
+      .double-room-swiper {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+      
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-pagination {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #14274a;
+        opacity: 0.5;
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullets {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .swiper-pagination-bullets .swiper-pagination-bullet {
+        flex: 1;
+      }
+      
       .dropdown-menu {
         .main-menu {
           display: flex;
@@ -38,7 +79,9 @@
           border-radius: 10px;
           display: flex;
           gap: 18px;
-          @include fontStyles(25px, 700, #fff);
+          font-size: 25px;
+          font-weight: 700;
+          color: #fff;
         }
   
         .menu {
@@ -86,4 +129,3 @@
       }
     }
   }
-  
