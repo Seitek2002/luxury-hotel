@@ -354,11 +354,20 @@ button {
   justify-content: center;
 }
 
+.map {
+  display: flex;
+  align-items: center;
+}
+.map img {
+  width: 100px;
+  height: 29px;
+}
+
 .adress p {
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
-  line-height: 48.76px;
+  line-height: 8.76px;
   text-align: left;
 }
 
@@ -366,8 +375,7 @@ button {
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
-  line-height: 48.76px;
-  text-align: left;
+  line-height: 28px;
 }
 
 .info input {
@@ -381,9 +389,6 @@ button {
 
 .info p {
   font-family: "Arial";
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .mess p {
@@ -394,18 +399,21 @@ button {
   height: 180px;
 }
 
-.info button {
+.submit {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 20px;
-  height: 40px;
-  width: 110px;
-  margin-right: 20px;
-  background-color: orange;
-  color: white;
+}
+.submit button {
+  margin-top: 15px;
+  background: #E0B973;
   border: none;
-  font-family: "Arial";
+  padding: 18px 25px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .word p {
