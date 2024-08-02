@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./css/index.css" />
 
@@ -78,7 +75,7 @@
     <section class="single-room">
       <div class="container">
         <div class="single-room__content">
-          <img src="./assets/images/single-room.png" alt="single-room" />
+          <img class="single__img" src="./assets/images/single-room.png" alt="single-room" />
           <h2>SINGLE ROOM</h2>
 
           <div class="dropdown-menu">
@@ -147,7 +144,7 @@
         <div class="double-room__content">
 
           <!-- Swiper Container -->
-          <div class="swiper-container double-room-swiper">
+          <div class="swiper mySwiper double-room-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
@@ -242,11 +239,36 @@
     <section class="twin-room">
       <div class="container">
         <div class="twin-room__content">
-          <img
-            class="double-img"
-            src="./assets/images/twin-room1.jpeg"
-            alt="twin-room"
-          />
+          
+          <div class="swiper mySwiper double-room-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room.png"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room2.jpg"
+                  alt="double-room"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="double-img"
+                  src="./assets/images/double-room3.jpg"
+                  alt="double-room"
+                />
+              </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="swiper-pagination"></div>
+          </div>
+
           <h2>TWIN ROOM</h2>
 
           <div class="dropdown-menu">
@@ -310,7 +332,9 @@
       </div>
     </section>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./dropdown-rooms.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>

@@ -3,8 +3,11 @@
 
   &__content {
     border: 3px solid #14274a;
-    width: 1602px;
+    width: 1565px;
 
+    .single__img{
+      width: 1565px;
+    }
     h2 {
       text-align: center;
       background-color: #14274a;

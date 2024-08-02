@@ -3,7 +3,23 @@
   
     &__content {
       border: 3px solid #14274a;
-      width: 1599px;
+
+      .double-img{
+        width: 1565px;
+        height: 962px;
+      }
+
+      .swiper-pagination-bullet-active-main{
+        --swiper-theme-color:black;
+      }
+      .swiper-pagination-bullet{
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        border: solid black; 
+        border-radius: 50%;
+        border-width: 2px; 
+      }
       
       h2 {
         text-align: center;

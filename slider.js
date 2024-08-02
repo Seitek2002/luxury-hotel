@@ -7,3 +7,4 @@ const swiper = new Swiper('.double-room-swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
   });
+
