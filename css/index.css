@@ -402,4 +402,172 @@ button {
 }
 .single-room__content .dropdown-menu .main-menu-clicked {
   box-shadow: 0 0 0.8em #14274a;
+}
+
+.double-room {
+  margin-top: 82px;
+}
+.double-room__content {
+  border: 3px solid #14274a;
+  width: 1599px;
+}
+.double-room__content h2 {
+  text-align: center;
+  background-color: #14274a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73.14px;
+  margin: 0;
+}
+.double-room__content .dropdown-menu .main-menu {
+  display: flex;
+  justify-content: center;
+  gap: 614px;
+  margin: 108px 0 98px 0;
+}
+.double-room__content .dropdown-menu .main-menu .menu-btn {
+  display: flex;
+  gap: 40px;
+}
+.double-room__content .dropdown-menu .main-menu h3 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #14274a;
+}
+.double-room__content .dropdown-menu .price {
+  background: #e0b973;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 18px;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.double-room__content .dropdown-menu .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: none;
+}
+.double-room__content .dropdown-menu .menu .short-info-menu {
+  display: flex;
+  gap: 249px;
+  border-top: 3px solid #14274a;
+}
+.double-room__content .dropdown-menu .menu .short-info-menu p,
+.double-room__content .dropdown-menu .menu .short-info-menu ul {
+  color: #14274a;
+  font-size: 25px;
+  font-weight: 700;
+}
+.double-room__content .dropdown-menu .menu .short-info-menu ul {
+  font-weight: 400;
+  list-style: none;
+}
+.double-room__content .dropdown-menu .menu .short-info-menu ul li {
+  text-align: left;
+}
+.double-room__content .dropdown-menu .menu .big-info-menu {
+  display: flex;
+  border-top: 3px solid #14274a;
+  margin-top: 30px;
+}
+.double-room__content .dropdown-menu .menu .big-info-menu p {
+  color: #14274a;
+  font-size: 25px;
+  width: 420px;
+}
+.double-room__content .dropdown-menu .menu-open {
+  display: flex;
+}
+.double-room__content .dropdown-menu .main-menu-clicked {
+  box-shadow: 0 0 0.8em #14274a;
+}
+
+.twin-room {
+  margin-top: 82px;
+}
+.twin-room__content {
+  border: 3px solid #14274a;
+  width: 1599px;
+}
+.twin-room__content h2 {
+  text-align: center;
+  background-color: #14274a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73.14px;
+  margin: 0;
+}
+.twin-room__content .dropdown-menu .main-menu {
+  display: flex;
+  justify-content: center;
+  gap: 614px;
+  margin: 108px 0 98px 0;
+}
+.twin-room__content .dropdown-menu .main-menu .menu-btn {
+  display: flex;
+  gap: 40px;
+}
+.twin-room__content .dropdown-menu .main-menu h3 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #14274a;
+}
+.twin-room__content .dropdown-menu .price {
+  background: #e0b973;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 18px;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.twin-room__content .dropdown-menu .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: none;
+}
+.twin-room__content .dropdown-menu .menu .short-info-menu {
+  display: flex;
+  gap: 249px;
+  border-top: 3px solid #14274a;
+}
+.twin-room__content .dropdown-menu .menu .short-info-menu p,
+.twin-room__content .dropdown-menu .menu .short-info-menu ul {
+  color: #14274a;
+  font-size: 25px;
+  font-weight: 700;
+}
+.twin-room__content .dropdown-menu .menu .short-info-menu ul {
+  font-weight: 400;
+  list-style: none;
+}
+.twin-room__content .dropdown-menu .menu .short-info-menu ul li {
+  text-align: left;
+}
+.twin-room__content .dropdown-menu .menu .big-info-menu {
+  display: flex;
+  border-top: 3px solid #14274a;
+  margin-top: 30px;
+}
+.twin-room__content .dropdown-menu .menu .big-info-menu p {
+  color: #14274a;
+  font-size: 25px;
+  width: 420px;
+}
+.twin-room__content .dropdown-menu .menu-open {
+  display: flex;
+}
+.twin-room__content .dropdown-menu .main-menu-clicked {
+  box-shadow: 0 0 0.8em #14274a;
 }/*# sourceMappingURL=index.css.map */

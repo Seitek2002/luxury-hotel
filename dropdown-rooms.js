@@ -1,9 +1,9 @@
-const dropdowns = document.querySelectorAll('.dropdown-menu')
+const dropdowns = document.querySelectorAll('.dropdown-menu');
 
 dropdowns.forEach(dropdown => {
-    const select = document.querySelector('.main-menu')
-    const menu = document.querySelector('.menu')
-    const options = document.querySelectorAll('#info-room')
+    const select = dropdown.querySelector('.main-menu');
+    const menu = dropdown.querySelector('.menu');
+    const options = dropdown.querySelectorAll('#info-room');
 
     select.addEventListener('click', () => {
         select.classList.toggle('main-menu-clicked');
@@ -14,13 +14,10 @@ dropdowns.forEach(dropdown => {
         option.addEventListener('click', () => {
             select.classList.remove('main-menu-clicked');
             menu.classList.remove('menu-open');
-            options.forEach(item =>{
-                item.classList.remove('active')
+            options.forEach(item => {
+                item.classList.remove('active');
             });
-            option.classList.add('active')
-
-        })
-    })
-
-
-})
+            option.classList.add('active');
+        });
+    });
+});
