@@ -1,107 +1,124 @@
 .double-room {
-    margin-top: 82px;
-  
-    &__content {
-      border: 3px solid #14274a;
+  margin-top: 82px;
 
-      .double-img{
-        width: 1565px;
-        height: 962px;
+  &__content {
+    border: 3px solid #14274a;
+
+    h2 {
+      text-align: center;
+      background-color: #14274a;
+      @include fontStyles(25px, 700, $text-purple);
+      margin: 0;
+    }
+
+    .swiper-pagination-bullet-active-main {
+      --swiper-theme-color: white;
+    }
+    .swiper-pagination-bullet {
+      background-color: black;
+      width: 20px;
+      height: 20px;
+      border: solid white;
+      border-radius: 50%;
+      border-width: 2px;
+    }
+
+    .dropdown-menu {
+      .main-menu {
+        display: flex;
+        justify-content: space-around;
+        margin: 108px 0 98px 0;
+        .menu-btn {
+          display: flex;
+          gap: 40px;
+        }
+
+        h3 {
+          @include fontStyles(25px, 700, $text-purple);
+        }
       }
-      
-      h2 {
-        text-align: center;
-        background-color: #14274a;
-        color: #fff;
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 73.14px;
-        margin: 0;
+      .price {
+        background: #e0b973;
+        padding: 24px 32px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        gap: 18px;
+        @include fontStyles(25px, 700, $text-white);
       }
 
-      .swiper-pagination-bullet-active-main{
-        --swiper-theme-color:black;
-      }
-      .swiper-pagination-bullet{
-        background-color: transparent;
-        width: 20px;
-        height: 20px;
-        border: solid black; 
-        border-radius: 50%;
-        border-width: 2px; 
-      }
-
-      .dropdown-menu {
-        .main-menu {
+      .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: none;
+        .short-info-menu {
           display: flex;
           justify-content: center;
-          gap: 614px;
-          margin: 108px 0 98px 0;
-          .menu-btn {
-            display: flex;
-            gap: 40px;
+          border-top: 3px solid #14274a;
+
+          p,
+          ul {
+            @include fontStyles(25px, 700, $text-purple);
           }
-  
-          h3 {
-            font-weight: 700;
-            font-size: 25px;
-            color: #14274a;
+          ul {
+            font-weight: 400;
+            list-style: none;
+            li {
+              text-align: left;
+            }
+          }
+        }
+        .big-info-menu {
+          display: flex;
+          border-top: 3px solid #14274a;
+          margin-top: 30px;
+          p {
+            @include fontStyles(25px, 420, $text-purple);
+          }
+        }
+      }
+
+      .menu-open {
+        display: flex;
+      }
+      .main-menu-clicked {
+        box-shadow: 0 0 0.8em #14274a;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  img {
+    height: 926px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .double-room {
+    &__content {
+      .dropdown-menu {
+        .main-menu {
+          .menu-btn {
+            align-items: center;
+            gap: 10px;
+            .plus {
+              width: 20px;
+              height: 20px;
+            }
+            h3 {
+              @include fontStyles(14px, 700, $text-purple);
+            }
           }
         }
         .price {
-          background: #e0b973;
-          padding: 24px 32px;
-          border: none;
-          border-radius: 10px;
-          display: flex;
-          gap: 18px;
-          font-size: 25px;
-          font-weight: 700;
-          color: #fff;
-        }
-  
-        .menu {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          display: none;
-          .short-info-menu {
-            display: flex;
-            gap: 249px;
-            border-top: 3px solid #14274a;
-  
-            p,
-            ul {
-              color: #14274a;
-              font-size: 25px;
-              font-weight: 700;
-            }
-            ul {
-              font-weight: 400;
-              list-style: none;
-              li{
-              text-align: left;
-              }
-            }
-          }
-          .big-info-menu{
-            display: flex;
-            border-top: 3px solid #14274a;
-            margin-top: 30px;
-            p{
-              color: #14274a;
-              font-size: 25px;
-              width: 420px;
-            }
-          }
-        }
-  
-        .menu-open{
-          display: flex;
-        }
-        .main-menu-clicked{
-          box-shadow: 0 0 0.8em #14274a;
+          padding: 5px;
+          margin-top: 5px;
+          text-align: center;
+          @include fontStyles(16px, 700, $text-white);
         }
       }
     }
   }
+}

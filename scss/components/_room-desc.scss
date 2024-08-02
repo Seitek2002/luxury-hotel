@@ -8,7 +8,7 @@
       margin-top: 81px;
       margin-bottom: 0;
 
-      @include fontStyles(60px, 700, #14274a, "Times New Roman");
+      @include fontStyles(60px, 700, $text-purple, "Times New Roman");
       letter-spacing: 15px;
     }
 

@@ -3,10 +3,9 @@
 
   &__content {
     border: 3px solid #14274a;
-    width: 1565px;
 
-    .single__img{
-      width: 1565px;
+    .single__img {
+      width: 100%;
     }
     h2 {
       text-align: center;
@@ -14,14 +13,12 @@
       color: #fff;
       font-weight: 700;
       font-size: 60px;
-      line-height: 73.14px;
       margin: 0;
     }
     .dropdown-menu {
       .main-menu {
         display: flex;
-        justify-content: center;
-        gap: 614px;
+        justify-content: space-around;
         margin: 108px 0 98px 0;
         .menu-btn {
           display: flex;
@@ -29,9 +26,7 @@
         }
 
         h3 {
-          font-weight: 700;
-          font-size: 25px;
-          color: #14274a;
+          @include fontStyles(25px, 700, $text-purple);
         }
       }
       .price {
@@ -56,9 +51,7 @@
 
           p,
           ul {
-            color: #14274a;
-            font-size: 25px;
-            font-weight: 700;
+            @include fontStyles(25px, 700, $text-purple);
           }
           ul {
             font-weight: 400;
@@ -73,9 +66,8 @@
           border-top: 3px solid #14274a;
           margin-top: 30px;
           p {
-            color: #14274a;
-            font-size: 25px;
-            width: 420px;
+            @include fontStyles(25px, 420, $text-purple);
+
           }
         }
       }
@@ -85,6 +77,38 @@
       }
       .main-menu-clicked {
         box-shadow: 0 0 0.8em #14274a;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .single-room {
+    &__content {
+      h2{
+        @include fontStyles(24px, 700, $text-white);
+
+      }
+      .dropdown-menu {
+        .main-menu {
+          margin: 20px 0;
+          .menu-btn {
+            align-items: center;
+            gap: 10px;
+            .plus {
+              width: 20px;
+              height: 20px;
+            }
+            h3 {
+              @include fontStyles(14px, 700, $text-purple);
+            }
+          }
+        }
+        .price {
+          padding: 5px;
+          margin-top: 5px;
+          text-align: center;
+          @include fontStyles(16px, 700, $text-white);
+        }
       }
     }
   }
