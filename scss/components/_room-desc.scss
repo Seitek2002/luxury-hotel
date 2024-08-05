@@ -5,17 +5,20 @@
     h2 {
       line-height: 72px;
       letter-spacing: 0.05em;
-      margin-top: 81px;
-      margin-bottom: 0;
+      margin: 81px 0 0 0;
 
-      @include fontStyles(60px, 700, $text-purple, "Times New Roman");
-      letter-spacing: 15px;
+      @include fontStyles(60px, 700, $text-purple);
+      @media screen and (max-width: 425px) {
+        @include fontStyles(28px, 700, $text-purple);
+      }
     }
 
     p {
-      color: #14274a;
-      font-size: 25px;
+      @include fontStyles(25px, 570, $text-purple);
       margin: 29px 0;
+      @media screen and (max-width: 425px) {
+        @include fontStyles(16px, 570, $text-purple);
+      }
     }
   }
 }
