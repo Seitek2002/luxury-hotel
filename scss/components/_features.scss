@@ -1,6 +1,6 @@
 .features {
     text-align: center;
-    margin: 83px;
+    
     &__info {
         p {
             font-family: "Montserrat";
@@ -8,10 +8,6 @@
             line-height: 30px;
             font-weight: 400;
             font-size: 24px;
-           
-            
-           
-            
         }
         h2 {
             color: #14274A;
@@ -19,5 +15,15 @@
             font-size: 60px;
         }
 
+    }
+    .content {
+        .non {
+            width: 100%;
+            margin-top: 186px;
+        }
+        .nan {
+            width: 100%;
+            margin-top: 83px;
+        }
     }
 }
