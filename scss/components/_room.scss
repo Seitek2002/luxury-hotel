@@ -1,0 +1,176 @@
+.room {
+  margin-top: 82px;
+
+  &__content {
+    h2 {
+      text-align: center;
+      background-color: #14274a;
+      margin: 0;
+      @include fontStyles(60px, 700, $text-white);
+    }
+
+    .swiper-pagination-bullet {
+      background-color: transparent;
+      opacity: 1;
+      width: 20px;
+      height: 20px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: white;
+      --swiper-theme-color: white;
+    }
+    .swiper-slide img {
+      height: 926px;
+    }
+
+    .dropdown-menu {
+      .main-menu {
+        display: flex;
+        justify-content: space-around;
+        margin: 108px 0 98px 0;
+
+        .menu-btn {
+          display: flex;
+          gap: 40px;
+        }
+
+        h3 {
+          @include fontStyles(25px, 700, $text-purple);
+        }
+      }
+
+      .price {
+        background: #e0b973;
+        padding: 24px 32px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        gap: 18px;
+        @include fontStyles(25px, 700, $text-white);
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: none;
+
+        .short-info-menu,
+        .big-info-menu {
+          display: flex;
+          justify-content: center;
+          border-top: 3px solid #14274a;
+          margin-top: 30px;
+          
+          p,
+          ul {
+            @include fontStyles(25px, 700, $text-purple);
+            @media screen and (max-width: 768px) {
+              @include fontStyles(14px, 700, $text-purple);
+            }
+          }
+
+          ul {
+            font-weight: 400;
+            list-style: none;
+
+            li {
+              text-align: left;
+            }
+          }
+         
+        }
+        .big-info-menu p {
+          @include fontStyles(25px, 420, $text-purple);
+          @media screen and (max-width: 768px) {
+            @include fontStyles(14px, 420, $text-purple);
+          }
+        }
+      }
+
+      .menu-open {
+        display: flex;
+      }
+
+      .main-menu-clicked {
+        box-shadow: 0 0 0.8em #14274a;
+      }
+    }
+  }
+
+  // Общие стили для мобильных устройств
+  @media screen and (max-width: 425px) {
+    &__content {
+      h2 {
+        @include fontStyles(24px, 700, $text-white);
+      }
+
+      .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        border-width: 1px;
+      }
+
+      .dropdown-menu {
+        .main-menu {
+          margin: 20px 0;
+
+          .menu-btn {
+            align-items: center;
+            gap: 10px;
+
+            .plus {
+              width: 20px;
+              height: 20px;
+            }
+
+            h3 {
+              @include fontStyles(14px, 700, $text-purple);
+            }
+          }
+        }
+
+        .price {
+          padding: 5px;
+          margin-top: 5px;
+          text-align: center;
+          @include fontStyles(16px, 700, $text-white);
+        }
+      }
+    }
+
+    .swiper-slide {
+      img {
+        height: 219px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.single-room {
+  &__content {
+    margin-top: 82px;
+    border: 3px solid #14274a;
+    .single__img {
+      width: 100%;
+    }
+  }
+}
+
+.double-room {
+  &__content {
+    margin-top: 82px;
+    border: 3px solid #14274a;
+  }
+}
+
+.twin-room {
+  &__content {
+    margin-top: 82px;
+    border: 3px solid #14274a;
+  }
+}

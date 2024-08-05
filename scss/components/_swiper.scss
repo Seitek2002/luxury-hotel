@@ -3,7 +3,7 @@
 	max-width: 798px;
 	h2 {
 		text-align: center;
-		@include fontStyles(72px, 700, purple, 'Times New Roman');
+		@include fontStyles(72px, 700, #14274a, 'Times New Roman');
 		margin: 0;
 		margin-bottom: 26px;
 		@media screen and (max-width: 375px) {
@@ -13,24 +13,25 @@
 			}
 		}
 	}
-}
-
-.swiper-slide h3 {
-	@include fontStyles(36px, 400, purple);
-	text-align: center;
-	margin: 0;
-	margin-bottom: 19px;
-}
-.swiper-slide p {
-	@include fontStyles(25px, 400, purple);
-	text-align: center;
-	margin: 0;
-	margin-bottom: 23px;
-}
-.swiper-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 21px;
+	.swiper {
+		&-slide h3 {
+			@include fontStyles(36px, 400, #14274a);
+			text-align: center;
+			margin: 0;
+			margin-bottom: 19px;
+		}
+		&-slide p {
+			@include fontStyles(25px, 400, #14274a);
+			text-align: center;
+			margin: 0;
+			margin-bottom: 23px;
+		}
+		&-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 21px;
+		}
+	}
 }
 .button-prev-swp,
 .button-next-swp {
