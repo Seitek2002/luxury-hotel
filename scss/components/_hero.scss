@@ -203,8 +203,15 @@
   }
 }
 .hero.room-page {
-  background: url(/assets/images/hero-img-room.png) center;
-  
+  background: url(/assets/images/hero-img-bg.png) center;
+  background-size: 100%;
+
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+  }
+  @media screen and (max-width: 425px) {
+    background-size: cover;
+  }
 }
 .facilities-hero {
     background: url(../assets/images/facilities-banner.png) center;
