@@ -71,6 +71,53 @@ button {
   }
 }
 
+.header__menu {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .nav-links a {
+    margin: 15px 0;
+  }
+  .header__menu {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    transform: translateX(0);
+    background: #86a6c1;
+  }
+  .nav-links.open {
+    display: flex;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 700;
+    color: #86a6c1;
+  }
+  .nav-links.open:hover {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
 .swipper {
   margin: 0 auto;
   max-width: 798px;
