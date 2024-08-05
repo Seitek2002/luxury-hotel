@@ -16,13 +16,16 @@
         }
 
     }
-    .content {
-        .non {
+    &__content {
+        img {
             width: 100%;
+        }
+        .other {
+            
             margin-top: 186px;
         }
-        .nan {
-            width: 100%;
+        .gym {
+            
             margin-top: 83px;
         }
     }
