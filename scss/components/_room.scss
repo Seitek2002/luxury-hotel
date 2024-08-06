@@ -1,7 +1,36 @@
 .room {
   margin-top: 82px;
+  .room-desc {
+    &__content {
+      text-align: center;
+  
+      h2 {
+        line-height: 72px;
+        letter-spacing: 0.05em;
+        margin: 81px 0 0 0;
+  
+        @include fontStyles(60px, 700, $text-purple);
+        @media screen and (max-width: 425px) {
+          @include fontStyles(28px, 700, $text-purple);
+        }
+      }
+  
+      p {
+        @include fontStyles(25px, 570, $text-purple);
+        margin: 29px 0;
+        @media screen and (max-width: 425px) {
+          @include fontStyles(16px, 570, $text-purple);
+        }
+      }
+    }
+  }
 
   &__content {
+    .room__item {
+        margin-top: 82px;
+        border: 3px solid #14274a;
+      
+    }
     h2 {
       text-align: center;
       background-color: #14274a;
@@ -151,26 +180,4 @@
   }
 }
 
-.single-room {
-  &__content {
-    margin-top: 82px;
-    border: 3px solid #14274a;
-    .single__img {
-      width: 100%;
-    }
-  }
-}
 
-.double-room {
-  &__content {
-    margin-top: 82px;
-    border: 3px solid #14274a;
-  }
-}
-
-.twin-room {
-  &__content {
-    margin-top: 82px;
-    border: 3px solid #14274a;
-  }
-}
