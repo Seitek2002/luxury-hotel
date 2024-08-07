@@ -1,32 +1,37 @@
 .features {
     text-align: center;
-    
     &__info {
         p {
-            font-family: "Montserrat";
-            color: #14274A;
             line-height: 30px;
-            font-weight: 400;
-            font-size: 24px;
+            @include fontStyles(24px, 400, $text-purple,'Montserrat');
         }
         h2 {
-            color: #14274A;
-            font-weight: 700;
-            font-size: 60px;
+            @include fontStyles(60px, 700, $text-purple,'Times New Roman');
         }
-
     }
-    &__content {
+    &__content {    
         img {
             width: 100%;
         }
         .other {
-            
             margin-top: 186px;
         }
-        .gym {
-            
-            margin-top: 83px;
+        .gym {  
+          background: url(../assets/images/facilities-gym.png);
+          height: 1052px;
+          width: 1500px;
+          margin-top: 83px;
         }
+        .box {
+            background: #fff;
+            height: 75px;
+            width: 684px;
+            
+        }
+        p{
+            @include fontStyles(60px, 700, $text-purple,'Times New Roman');
+            text-align: center;
+        }
+        
     }
 }
