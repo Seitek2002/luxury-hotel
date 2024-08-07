@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const swiperWrapper = document.createElement('div')
         swiperWrapper.className = 'swiper-wrapper'
 
-
         swiperImages = []
         item.slider.forEach(slide => {
             let swiperSlide = document.createElement('div')
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
             swiperSlide.appendChild(swiperImg)
             swiperImages.push(swiperSlide);
         })
-
 
         const swiperPagination = document.createElement('div')
         swiperPagination.className = 'swiper-pagination'
@@ -144,33 +142,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const bigInfoContent1 = document.createElement('p');
         bigInfoContent1.innerHTML = `
-  Подготовка постели ко сну<br />
-  Круглосуточное обслуживание номеров<br />
-  Регулярно пополняемый бесшумный мини-бар<br />
-  Фирменный постельный комплект Ванная комната<br />
-  Ванные принадлежности ECO <br />
-  Зеркало для макияжа с подсветкой, фен<br />
-  Махровые халаты<br />
-  Высокоскоростной доступ в Интернет<br />
-  Возможность подключения компьютера<br />
-  Чайник и комплиментарный набор чая и кофе<br />
-  Утюг и гладильная доска<br />
+            Подготовка постели ко сну<br />
+            Круглосуточное обслуживание номеров<br />
+            Регулярно пополняемый бесшумный мини-бар<br />
+            Фирменный постельный комплект Ванная комната<br />
+            Ванные принадлежности ECO <br />
+            Зеркало для макияжа с подсветкой, фен<br />
+            Махровые халаты<br />
+            Высокоскоростной доступ в Интернет<br />
+            Возможность подключения компьютера<br />
+            Чайник и комплиментарный набор чая и кофе<br />
+            Утюг и гладильная доска<br />
 `;
         bigInfoMenu.appendChild(bigInfoContent1);
 
         const bigInfoContent2 = document.createElement('p');
         bigInfoContent2.innerHTML = `
-  Все номера и люксы некурящие<br />
-  Ортопедические матрацы<br />
-  Smart HD ТВ 40 и 50 дюймов<br />
-  Сейф<br />
-  Система климат-контроля<br />
-  Меню подушек<br />
-  Принадлежности для детей<br />
-  Предоставление мин. воды<br />
-  Охраняемая парковка<br />
-  Гигиенический душ<br />
-  Балкон<br />
+            Все номера и люксы некурящие<br />
+            Ортопедические матрацы<br />
+            Smart HD ТВ 40 и 50 дюймов<br />
+            Сейф<br />
+            Система климат-контроля<br />
+            Меню подушек<br />
+            Принадлежности для детей<br />
+            Предоставление мин. воды<br />
+            Охраняемая парковка<br />
+            Гигиенический душ<br />
+            Балкон<br />
 `;
         bigInfoMenu.appendChild(bigInfoContent2);
 
@@ -213,11 +211,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiper = new Swiper('.double-room-swiper', {
         pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
+            el: '.swiper-pagination',
+            clickable: true,
         },
         slidesPerView: 1,
         spaceBetween: 30,
-      });
+    });
 
 })

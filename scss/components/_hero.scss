@@ -80,12 +80,12 @@
     }
 
     h1 {
-      @include fontStyles(154px, 700, $text-white, 'Times New Roman');
+      @include fontStyles(154px, 700, $text-white, "Times New Roman");
       line-height: 70%;
     }
 
     h2 {
-      @include fontStyles(60px, 700, $text-white, 'Times New Roman');
+      @include fontStyles(60px, 700, $text-white, "Times New Roman");
       letter-spacing: 15px;
     }
 
@@ -125,12 +125,12 @@
   
 
   h1 {
-    @include fontStyles(154px, 700, $text-white, 'Times New Roman');
+    @include fontStyles(154px, 700, $text-white, "Times New Roman");
     line-height: 70%;
   }
 
   h2 {
-    @include fontStyles(60px, 700, $text-white, 'Times New Roman');
+    @include fontStyles(60px, 700, $text-white, "Times New Roman");
     letter-spacing: 15px;
   }
 
@@ -199,7 +199,24 @@
 
     img {
       max-width: 60px;
+      @keyframes scrollAnimation {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: -6px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+  
+      
+      animation: scrollAnimation 1s infinite;
+      position: relative; 
     }
+
+    
   }
 }
 .hero.room-page {
