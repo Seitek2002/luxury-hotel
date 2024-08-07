@@ -154,23 +154,24 @@
 
     img {
       max-width: 60px;
-    }
-
-    @keyframes scrollAnimation {
-      0% {
-        top: 0;
+      @keyframes scrollAnimation {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: -6px;
+        }
+        100% {
+          top: 0;
+        }
       }
-      50% {
-        top: -10px;
-      }
-      100% {
-        top: 0;
-      }
+  
+      
+      animation: scrollAnimation 1s infinite;
+      position: relative; 
     }
 
     
-    animation: scrollAnimation 1s infinite;
-    position: relative; 
   }
 }
 .hero.room-page {
