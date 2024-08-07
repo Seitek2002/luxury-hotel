@@ -10,28 +10,104 @@
         }
     }
     &__content {    
-        img {
-            width: 100%;
-        }
-        .other {
-            margin-top: 186px;
-        }
         .gym {  
           background: url(../assets/images/facilities-gym.png);
-          height: 1052px;
-          width: 1500px;
+          min-height: 1052px;
+          width: 100%;
           margin-top: 83px;
-        }
-        .box {
+        
+      @include  rowStyles(center, flex-end);
+          p{
+            @include fontStyles(60px, 700, $text-purple,'Montserrat');
+            text-align: center;
             background: #fff;
             height: 75px;
             width: 684px;
-            
+            margin: 0 auto;
+
         }
-        p{
-            @include fontStyles(60px, 700, $text-purple,'Times New Roman');
-            text-align: center;
-        }
-        
+    }
+    .bar {
+        background: url(../assets/images/facilities-bar.png);
+      min-height: 972px;
+      width: 100%;
+      margin-top: 214px;
+   
+   @include rowStyles(center, flex-end); 
+     p{
+        @include fontStyles(60px, 700, $text-purple,'Montserrat');
+        text-align: center;
+        background: #fff;
+        height: 75px;
+        width: 684px;
+        margin: 0 auto;
+    }
+  }
+  .spa {
+    background: url(../assets/images/facilities-spa.png);
+    min-height: 1054px;
+    width: 100%;
+    margin-top: 158px;
+    
+   @include rowStyles(center, flex-end);
+
+    p{
+      @include fontStyles(60px, 700, $text-purple,'Montserrat');
+      text-align: center;
+      background: #fff;
+      height: 75px;
+      width: 684px;
+      margin: 0 auto;
+  }
+  }
+  .pool {
+    background: url(../assets/images/facilities-pool.png);
+    min-height: 888px;
+    width: 100%;
+    margin-top: 186px;
+    
+   @include rowStyles(center, flex-end);
+
+    p{
+      @include fontStyles(60px, 700, $text-purple,'Montserrat');
+      text-align: center;
+      background: #fff;
+      height: 75px;
+      width: 684px;
+      margin: 0 auto;
+  }
+  }
+  .rest {
+    background: url(../assets/images/facilities-rest.png);
+    min-height: 1054px;
+    width: 100%;
+    margin-top: 186px;
+   @include rowStyles(center, flex-end);
+
+    p{
+      @include fontStyles(60px, 700, $text-purple,'Montserrat');
+      text-align: center;
+      background: #fff;
+      height: 75px;
+      width: 684px;
+      margin: 0 auto;
+  }
+  }
+  .laundry {
+    background: url(../assets/images/facilities-laundy.png);
+    min-height: 1060px;
+    width: 100%;
+    margin-top: 186px;
+    margin-bottom: 113px;
+   @include rowStyles(center, flex-end);
+    p{
+      @include fontStyles(60px, 700, $text-purple,'Montserrat');
+      text-align: center;
+      background: #fff;
+      height: 75px;
+      width: 684px;
+      margin: 0 auto;
+  }
+  }
     }
 }
