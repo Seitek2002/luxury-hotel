@@ -1,50 +1,52 @@
 .header {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 
-    &__content {
-        @include rowStyles(space-between, center);
+  &__content {
+    @include rowStyles(space-between, center);
+  }
+
+  &__logo {
+    img {
+      max-width: 100%;
     }
 
-    &__logo {
-        img {
-            max-width: 100%;
-        }
+    @media screen and (max-width: 768px) {
+      width: 150px;
+    }
+  }
 
-        @media screen and (max-width: 768px) {
-            width: 150px;
-        }
+  nav {
+    display: flex;
+    gap: 88px;
+
+    @media screen and (max-width: 425px) {
+      display: none;
     }
 
-    nav {
-        display: flex;
-        gap: 88px;
+    a {
+      @include fontStyles(25px, 400, $text-white);
 
-        @media screen and (max-width: 425px) {
-            display: none;
-        }
+      &:hover {
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+      }
 
-        a {
-            @include fontStyles(25px, 400, $text-white);
-
-            &:hover {
-                font-weight: 700;
-                text-decoration: underline;
-            }
-
-            @media screen and (max-width: 768px) {
-                font-size: 16px;
-            }
-        }
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
+  }
 
-    &__menu {
-        width: 50px;
-        cursor: pointer;
-        display: none;
+  &__menu {
+    width: 50px;
+    cursor: pointer;
+    display: none;
 
-        @media screen and (max-width: 425px) {
-            display: inline;
-        }
+    @media screen and (max-width: 425px) {
+      display: inline;
     }
+  }
 }
